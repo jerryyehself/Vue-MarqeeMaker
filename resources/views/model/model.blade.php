@@ -1,6 +1,6 @@
 <html>
     <header>    
-        <title>幻燈片製作工具</title>
+        <title>幻燈片產生器</title>
         <link rel="stylesheet" type="text/css" href="css/app.css">
         
     </header>
