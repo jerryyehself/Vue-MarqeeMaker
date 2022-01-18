@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-image: linear-gradient(to top, #a8dadc, #f1faee);
+}
+
+.header{
+    height: 7%;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    color: #1d3557;
+}
+
+.content{
+    height: 80%
+}
+
+.marquee{
+    width: 94%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+    display: inline-block;
+    background-color: rgba(255,255,255, 0.3);
+    padding: 2%;
+    border-radius: 1em;
+    box-shadow: 0 5px 20px black;
+    height: 80%;
+}
+
+.slide{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.per-slide{
+    width: 70%;
+    height: calc(100% - 50px);
+    background-color: #a8dadc;
+    position: relative;
+    z-index: 2;
+    display:inline-block;
+    margin: 25px 15%;
+    transition: 1s;
+    box-shadow: 0 0 5px black;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.slide-description{
+    height: 2em;
+    width: calc(100% - 10px);
+    margin: 0;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 1em;
+    font-style: 'Nunito', sans-serif;
+    color: white;
+    text-align: right;
+    background-color: black;
+    opacity: 0.5;
+    vertical-align: middle;
+    line-height: 2em;
+}
+
+.slide-translator{
+    background-color: black;
+    height: 100%;
+    width: 3em;
+    opacity: 0.5;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.director {
+    display:flex; 
+    justify-content: center;
+    z-index: 3;
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    color: blanchedalmond;
+}
+
+.now-slide{
+    font-weight: bolder;
+    margin: 3px;
+    cursor: pointer;
+    text-shadow: 0 0 2px white;
+    opacity: 0.5;
+}
+
+.references{
+    display: block;
+}
+
+.toolbar{
+    width: calc(100% - 0.5em);
+    display: inline-flex;
+    height: 10%;
+    padding-left: 0.5em;
+    position: relative;
+    margin: 0;
+    color: #1d3557;
+    align-items: center;
+    
+}
+
+.tool{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #f1faee;
+    margin:0 auto;
+    font-size: x-large;
+    border-left: solid;
+    background-color: black;
+}
+
+.tool:hover{
+    color: black;
+    background-color: #a8dadc;
+    transition: 0.5s;
+}
+
+.title{
+    width: fit-content;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3em;
+    display: flex;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.size-selector{
+    margin: 1px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5em;
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    height: 80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.size{
+    background-color: #1d3557;
+    height: 1em;
+    width: 1em;
+    margin: 1px;
+}
+
+.function-bar{
+    background-color: #6e7d94;
+    display: inline-flex;
+    height: 10%;
+    width: 100%;
+}
+
+.function-component{
+    display: inline-flex;
+    margin: 5px;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.function-component:active{
+    font-weight: bold;
+}
+
+.lightbox {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-mask {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgba(0, 0, 0, .5);
+    transition: opacity .3s ease;
+}
+
+.modal-container {
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;  
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+}
+
+.modal-body {
+    cursor: auto;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.slide-content{
+    border-radius: 0.5em;
+    border-style: dashed;
+    border-color: #1d3557;
+    display: block;
+    font-weight: bold;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.customize-option{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
