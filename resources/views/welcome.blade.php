@@ -1,7 +1,7 @@
 @extends('model.model')
 @section('content')
 <div class="toolbar">
-    <div class="title">幻燈片製作工具</div>
+    <div class="title">幻燈片產生器</div>
     <tool-block></tool-block>
 </div>
 
